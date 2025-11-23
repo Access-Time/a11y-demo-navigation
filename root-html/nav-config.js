@@ -32,8 +32,8 @@
       };
     }
 
-    const reactUrl = 'https://react-nav.vercel.app'
-    const nextUrl = 'https://next-nav.vercel.app'
+    const reactUrl = 'https://a11y-demo-navigation-reactjs.vercel.app/'
+    const nextUrl = 'https://a11y-demo-navigation-nextjs.vercel.app/'
 
     return {
       root: rootUrl,
