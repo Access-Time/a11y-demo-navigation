@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beta Case | HTML Control</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html">← Back to Dashboard</a>
+    </nav>
+
+    <main>
+        <!-- Missing H1, starting with H2 -->
+        <h2>Test Case Beta</h2>
+        <p>This page represents <strong>Structural Hierarchy Issues</strong>.</p>
+        
+        <ul>
+            <li>Has a <code>&lt;main&gt;</code> landmark.</li>
+            <li><strong>Missing <code>&lt;h1&gt;</code></strong> (starts with h2).</li>
+            <li>Has a unique and descriptive <code>&lt;title&gt;</code>.</li>
+        </ul>
+
+        <section aria-labelledby="other-apps">
+            <h3 id="other-apps">Other Apps</h3>
+            <ul>
+                <li><a id="react-link-beta" href="#">React App (SPA)</a></li>
+                <li><a id="next-link-beta" href="#">Next.js App (Hybrid)</a></li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>

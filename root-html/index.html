@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Control group for Navigation Accessibility Test Suite using static HTML." />
+    <title>Navigation A11y Test Suite - Control (HTML)</title>
+    <script src="nav-config.js"></script>
+  </head>
+  <body>
+    <main>
+      <h1>Navigation A11y Test Suite</h1>
+      <p>Static HTML Server-Side Navigation</p>
+
+      <p>
+        This dashboard is served via standard HTTP. Clicking links here performs
+        a full browser navigation.
+      </p>
+
+      <section aria-labelledby="test-cases-local-html">
+        <h2 id="test-cases-local-html">Test Cases (Local HTML)</h2>
+        <ul>
+          <li><a href="alpha.html">Alpha</a></li>
+          <li><a href="beta.html">Beta</a></li>
+          <li><a href="gamma.html">Gamma</a></li>
+          <li><a href="delta.html">Delta</a></li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="subprojects-cross-origin">
+        <h2 id="subprojects-cross-origin">Subprojects (Cross-Origin)</h2>
+        <ul>
+          <li><a id="react-link" href="#">React App (SPA)</a></li>
+          <li><a id="next-link" href="#">Next.js App (Hybrid)</a></li>
+        </ul>
+      </section>
+    </main>
+    <script>
+        window.addEventListener('load', function() {
+          if (window.navConfig) {
+            document.getElementById('react-link').href = window.navConfig.react;
+            document.getElementById('next-link').href = window.navConfig.next;
+          }
+        });
+    </script>
+  </body>
+</html>

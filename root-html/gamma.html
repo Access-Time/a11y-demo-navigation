@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamma Case | HTML Control</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html">← Back to Dashboard</a>
+    </nav>
+
+    <!-- No Main Landmark -->
+    <div class="main-container">
+        <!-- No Headings at all -->
+        <p class="heading-style">Test Case Gamma</p>
+        <p>This page represents <strong>Missing Landmarks and Headings</strong>.</p>
+        
+        <ul>
+            <li><strong>No <code>&lt;main&gt;</code> landmark</strong> (using div).</li>
+            <li><strong>No Headings</strong> (using styled text).</li>
+            <li>Has a unique and descriptive <code>&lt;title&gt;</code>.</li>
+        </ul>
+
+        <section aria-labelledby="other-apps">
+            <p class="heading-style" id="other-apps">Other Apps</p>
+            <ul>
+                <li><a id="react-link-gamma" href="#">React App (SPA)</a></li>
+                <li><a id="next-link-gamma" href="#">Next.js App (Hybrid)</a></li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>

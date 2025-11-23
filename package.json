@@ -1,0 +1,17 @@
+{
+  "name": "nav-a11y-test-suite",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "concurrently \"npm run start:root\" \"npm run start:react\" \"npm run start:next\"",
+    "start:root": "http-server root-html -p 8080 -c-1",
+    "start:react": "cd react-nav && npm run dev -- --port 5173",
+    "start:next": "cd next-nav && npm run dev -- -p 3001",
+    "install:all": "npm install && cd react-nav && npm install && cd ../next-nav && npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.0",
+    "http-server": "^14.1.1"
+  }
+}
+
