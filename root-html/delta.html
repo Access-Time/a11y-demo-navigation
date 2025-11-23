@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Stale Title: Intentionally incorrect -->
+    <title>Navigation A11y Test Suite - Control (HTML)</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html">← Back to Dashboard</a>
+    </nav>
+
+    <div class="main-container">
+        <p class="heading-style">Test Case Delta</p>
+        <p>This page represents <strong>Complete Accessibility Failure</strong>.</p>
+        
+        <ul>
+            <li><strong>No <code>&lt;main&gt;</code> landmark</strong>.</li>
+            <li><strong>No Headings</strong>.</li>
+            <li><strong>Stale Title</strong> (Title still says "Control (HTML)").</li>
+        </ul>
+
+        <section aria-labelledby="other-apps">
+            <p class="heading-style" id="other-apps">Other Apps</p>
+            <ul>
+                <li><a id="react-link-delta" href="#">React App (SPA)</a></li>
+                <li><a id="next-link-delta" href="#">Next.js App (Hybrid)</a></li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>
