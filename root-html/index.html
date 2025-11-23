@@ -30,18 +30,10 @@
       <section aria-labelledby="subprojects-cross-origin">
         <h2 id="subprojects-cross-origin">Subprojects (Cross-Origin)</h2>
         <ul>
-          <li><a id="react-link" href="#">React App (SPA)</a></li>
-          <li><a id="next-link" href="#">Next.js App (Hybrid)</a></li>
+          <li><a id="react-link" href="https://a11y-demo-navigation-reactjs.vercel.app">React App (SPA)</a></li>
+          <li><a id="next-link" href="https://a11y-demo-navigation-nextjs.vercel.app/">Next.js App (Hybrid)</a></li>
         </ul>
       </section>
     </main>
-    <script>
-        window.addEventListener('load', function() {
-          if (window.navConfig) {
-            document.getElementById('react-link').href = window.navConfig.react;
-            document.getElementById('next-link').href = window.navConfig.next;
-          }
-        });
-    </script>
   </body>
 </html>
